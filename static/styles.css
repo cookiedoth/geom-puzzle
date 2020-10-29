@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h1, h2, p, span, input {
+    font-family: helvetica;
+}
+
+p, h2 {
+    font-size: 24px;
+}
+
+#grid {
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    grid-template-areas:    "header header"
+                            "desc pic"
+                            "main gameFrameContainer"
+                            "rules leaderboards"
+                            "footer footer"
+}
+
+#grid > header {
+    grid-area: header;
+    background-color: rgb(34, 39, 45);
+}
+
+#grid > #desc {
+    grid-area: desc;
+}
+
+#desc > * {
+    padding-left: 160px;
+    padding-right: 60px;
+}
+
+#desc > h1 {
+    padding-top: 60px;
+}
+
+#grid > #pic {
+    grid-area: pic;
+    display: flex;
+    background-image: url(pic.png);
+}
+
+#grid > #main {
+    grid-area: main;
+    background-color: rgb(24, 32, 51);
+}
+
+#grid > #gameFrameContainer {
+    grid-area: gameFrameContainer;
+    background-color: rgb(24, 32, 51);
+}
+
+#grid > #rules {
+    grid-area: rules;
+}
+
+#grid > #leaderboards {
+    grid-area: leaderboards;
+    background-color: rgb(48, 105, 96);
+}
+
+#grid > footer {
+    grid-area: footer;
+    background-color: rgb(247, 247, 247);
+}
+
+#logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 140px;
+}
+
+#picObj {
+    display: inline-block;
+    margin: 0 0 0 auto;
+}
+
+#main > h1, #main > p {
+    color: white;
+}
+
+#main > * {
+    margin-left: 160px;
+}
+
+#editField {
+    margin-top: 100px;
+    height: 40px;
+    width: 480px;
+    font-size: 24px;
+    color: grey;
+}
+
+#mainHeader {
+    margin-top: 100px;
+}
+
+#mainText {
+    width: 480px;
+}
+
+#submitButton {
+    margin-top: 50px;
+    margin-bottom: 140px;
+    height: 50px;
+    width: 486px;
+    background-color: rgb(193, 98, 73);
+    position: relative;
+    font-size: 24px;
+    color: white;
+}
+
+/*#submitButton > span {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}*/
+
+#gameFrame {
+    width: 510px;
+    height: 510px;
+    background-color: white;
+    margin-top: 30px;
+    position: relative;
+}
+
+.node {
+    padding: 7px;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.borderLine {
+    background-color: rgb(255, 215, 184);
+    z-index: 1;
+}
+
+.edgeLine {
+    background-color: green;
+    z-index: 2;
+}
+
+#boardLabel {
+    color: white;
+}
+
+#leadersContainer {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#scoresContainer {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.leaderName {
+    margin-left: 150px;
+    color: white;
+}
+
+.leaderScore {
+    margin-right: 150px;
+    color: white;
+}
+
+.centerText {
+    text-align: center;
+}
+
+#desc {
+    height: 370px;
+}
+
+#rules {
+    text-align: left;
+}
+
+#rules > p, #rules > h1 {
+    padding-left: 130px;
+    padding-right: 60px;
+}
+
+#footer {
+    text-align: center;
+}

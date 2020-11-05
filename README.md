@@ -1,6 +1,6 @@
 # geom-puzzle
 
-Find the longest broken non-self-intersecting line between two points. Each segment must correspond to a knight move.
+Find the longest non-self-intersecting broken line between two points. Each segment must correspond to a knight move.
 
 <img src="gameplay.png" width="400">
 
